@@ -60,18 +60,17 @@ h1 {
 }
 
 .page-sidebar {
-  padding: 80px;
+  padding: 50px;
   text-align: center;
 
 }
 
 .profile_pic {
-  margin-top: -4%;
+  margin-top: -2%;
   margin-left: 0%;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .profile_pic, .aboutmepics, .wrapper img, .resume img{
@@ -82,17 +81,16 @@ h1 {
   }
 
 .wrapper img:hover, .resume img:hover{
-  overflow-y: scroll;
   opacity:0.4;
   filter:alpha(opacity=40);
+  z-index: -1;
 } 
   .column {
     margin-top: 10%;
-    width: 100%;
+    width: 30%;
     padding: 30px;
    color: var(--seashell);
   }
-
 
   ul {
     display: flex;
@@ -111,12 +109,23 @@ h1 {
     flex-direction: row;
   }
   
-  .wrapper, .resume{
-    width: 600px;
+  .wrapper{
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+}
+
+.resume{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--seashell);
+  align-items: center;
+  margin-left: 31%;
 }
 
  .wrapper header, .contact header, .resume header{
@@ -126,8 +135,14 @@ h1 {
   text-align: center;
  }
 
+ .wrapper {
+   margin-top: -43%;
+   margin-left: -140px;
+ }
+
+
  .wrapper img {
-  width: 100%;
+  width: 810px;
  }
 
  .contact {
@@ -137,7 +152,7 @@ h1 {
     width:100%;
 } 
 
-#contact, #work, #resume{
+#contact, #work {
   width: 100%;
   display:flex;
   font-size: 18px;
@@ -145,7 +160,6 @@ h1 {
 }
 
 .contact a{
-    float: center;
     font-size: 18px;
     text-decoration: none;
     color: var(--seashell);
@@ -163,14 +177,13 @@ h1 {
 
 @media screen and (max-width: 1200px) {
 
-  .column, .aboutmepics, .wrapper{ 
-    margin-top: 15%;
+  #aboutme, .aboutmepics, .wrapper{ 
+    margin-top: 20%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
 .topnav {
-    float: right;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -178,8 +191,8 @@ h1 {
  } 
 }
   @media screen and (max-width: 768px) {
-  .column, .aboutmepics, .wrapper{ 
-      margin-top: 35%;
+  .column, .aboutmepics, .wrapper, .contact{ 
+
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -187,18 +200,23 @@ h1 {
 .topnav {
   display: flex;
   justify-content: space-between;
-  margin-top: 15%;
+  margin-top: 10%;
   }
 .profile_pic{
   display: none;
+}
+.resume,{
+  margin-left: 30%; 
   }
 }
   @media screen and (max-width: 460px) {
-    .column, .aboutmepics, .wrapper{ 
-      margin-top: 50%;
+    .column, .wrapper, .contact{ 
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+  }
+.resume,{
+    margin-left: 30%; 
   }
 }
   
