@@ -118,14 +118,13 @@ h1 {
 }
 
 .resume{
-  width: 700px;
+  width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 18px;
   color: var(--seashell);
   align-items: center;
-  margin-left: 31%;
 }
 
  .wrapper header, .contact header, .resume header{
