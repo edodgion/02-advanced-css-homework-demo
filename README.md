@@ -7,7 +7,7 @@ In this weeks homework we were given the chance to start building a responsive a
 
 # Links
 ### Portfolio
-https://github.com/edodgion/02-advanced-css-homework-demo
+https://edodgion.github.io/02-advanced-css-homework-demo/
 
 ### Linked In
 https://www.linkedin.com/in/eric-dodgion-9a7003205/
